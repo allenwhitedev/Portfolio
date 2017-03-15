@@ -86,7 +86,7 @@
 		</div>
 		
 		<div class='mobileImgWrapper'>
-			<img src='img/gameModal.png' class="mobileImg" />
+			<img src='img/home.png' class="mobileImg" id='gGImg' />
 		</div>
 
 		<div class="iPhoneBottomer flexCenter">
@@ -133,7 +133,7 @@
 			<li class='yellowB'></li>
 			<li class="greenB"></li>
 		</div>
-		<img class='deskImg' src="img/lvd1D.png">
+		<img class='deskImg' src="img/lvd1D.png" id='lvdImg'>
 	</div>
 
 	<i class="ion-chevron-right iconMed navChevron" id='nextLVD'></i>
@@ -141,8 +141,8 @@
 </div>
 
 	<br> <br>
-
-	<h2>Descriptions: <u>To be added</u> </h2>
+<!-- 
+	<h2>Descriptions</h2>
 
 	<p class='projectDescription'>
 		Gif Game is an iOS and Android app that is like apples to apples. Players submits gifs in response to prompts and try to earn points with the judge. Made with Javascript and love.
@@ -150,7 +150,7 @@
 
 	<p class='projectDescription'>
 		LakeView Dental is a dental office in Coral Springs, Florida. The website allows patients to enter their data online, view available dental procedures and simply see the location. The website was one of my first forays into web development. Made with Ruby on Rails and low quality images.   
-	</p>
+	</p> -->
 
 <!-- EXTRA SPACE FOR TESTING -->
 
@@ -158,6 +158,30 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
+<script type="text/javascript">
+	let lvdPics = ['lvd1D.png', 'lvd2D.png', 'lvd3D.png']
+	let gGPics = ['home.png', 'gameModal.png', 'owlPlayer.png', 'roundWinner.png', 'iphone5Judge.png', 'gameWinner.png']
+
+	console.log('script here')
+	let i = 0; let j = 0
+
+	setInterval( () => 
+	{
+		console.log('interval', i, j)
+		if (j < gGPics.length - 1)
+			j++
+		else
+			j = 0
+		if ( i < lvdPics.length - 1 )
+			i++
+		else 
+			i = 0
+
+		document.getElementById("gGImg").src = "img/" + gGPics[j]
+		document.getElementById("lvdImg").src = "img/" +  lvdPics[i]
+
+	}, 3000 )
+</script>
 
 
 </html>
