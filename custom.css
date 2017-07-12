@@ -57,7 +57,6 @@ body {background: #eeecef; color: #424242;}
 .appIconGG 
 {
 	height: 8rem; width: 8rem; border-radius: 8px; 
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 8px 8px 4px rgba(0,0,0,0.11);
 }
 #nextGG:active, #prevGG:active {color: #de4f4f;}
 .mobileDisplayWrapper {width: 420px; margin: auto; margin-bottom: 240px;}
