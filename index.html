@@ -5,7 +5,7 @@
   <title>AWD Portfolio</title>
   <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
   <link rel='stylesheet' href='custom.css'>
-  <link href='//fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 </head>
@@ -44,7 +44,7 @@
 	<div class="projectHeader textCenter">
 		
 		<div class="appIconHeader">
-			<img class='appIconGG' src="img/gifGameIconBeta.png">
+			<img class='appIconGG' src="img/gifGameIcon.png">
 				<h2 class='appIconTitle'>Gif Game</h2>	
 				
 				<div class="badgesContainer">
@@ -76,8 +76,6 @@
 <!-- MOBILE WRAPPER -->
 <div class="mobileDisplayWrapper flexCenter">
 
-	<i class="ion-chevron-left iconMed navChevron" id='prevGG'></i>
-
 	<div class="mobileDisplay">	
 		
 		<div class="iPhoneTopper">
@@ -86,7 +84,7 @@
 		</div>
 		
 		<div class='mobileImgWrapper'>
-			<img src='img/home.png' class="mobileImg" id='gGImg' />
+			<video poster='img/gifGamePoster.png' width="320" src='video/gifGameDemo.mp4' autoplay loop></video>
 		</div>
 
 		<div class="iPhoneBottomer flexCenter">
@@ -96,8 +94,6 @@
 		</div>
 
 	</div>
-
-	<i class="ion-chevron-right iconMed navChevron" id='nextGG'></i>
 
 </div>	
 
@@ -162,12 +158,12 @@
 	let lvdPics = ['lvd1D.png', 'lvd2D.png', 'lvd3D.png']
 	let gGPics = ['home.png', 'gameModal.png', 'owlPlayer.png', 'roundWinner.png', 'iphone5Judge.png', 'gameWinner.png']
 
-	console.log('script here')
+	//console.log('script here')
 	let i = 0; let j = 0
 
 	setInterval( () => 
 	{
-		console.log('interval', i, j)
+		//console.log('interval', i, j)
 		if (j < gGPics.length - 1)
 			j++
 		else
@@ -177,7 +173,7 @@
 		else 
 			i = 0
 
-		document.getElementById("gGImg").src = "img/" + gGPics[j]
+		//document.getElementById("gGImg").src = "img/" + gGPics[j]
 		document.getElementById("lvdImg").src = "img/" +  lvdPics[i]
 
 	}, 3000 )
