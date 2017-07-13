@@ -91,3 +91,16 @@ body {background: #eeecef; color: #424242;}
 	{width: 45px; height: 45px; border-radius: 50%; border: 2px solid #9E9E9E;}
 .homeSquare 
 	{border-radius: 2px; height: 14px; width: 14px; border: 2px solid #9E9E9E;}
+
+/* MEDIA QUERIES */
+
+/* mobile */
+@media (max-width: 600px)
+{
+	.nav-text { font-size: 1.5rem; }
+	p { font-size: 1rem; margin: 5px; }
+	.badgesContainer { flex-direction: column; justify-content: center; }
+	.temp, .mobileDisplayWrapper { display: none; }
+	.desktopDisplayWrapper { display: none; }
+
+}
