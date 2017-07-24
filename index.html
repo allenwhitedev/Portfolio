@@ -7,6 +7,7 @@
   <link rel='stylesheet' href='custom.css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 </head>
 
@@ -92,7 +93,7 @@
 		</div>
 		
 		<div class='mobileImgWrapper'>
-			<video poster='img/gifGamePoster.png' width="320" src='video/gifGameDemo.mp4' autoplay loop></video>
+			<video id='ggVideoDemo' poster='img/gifGamePoster.png' width="320" src='video/gifGameDemo.mp4' autoplay loop></video>
 		</div>
 
 		<div class="iPhoneBottomer flexCenter">
@@ -185,6 +186,16 @@
 		document.getElementById("lvdImg").src = "img/" +  lvdPics[i]
 
 	}, 3000 )
+
+	// show video controls on hover for gif game demo
+	$('#ggVideoDemo').hover( function() 
+	{
+    if ( this.hasAttribute("controls") ) 
+    	this.removeAttribute("controls")
+    else 
+    	this.setAttribute("controls", "controls")
+	})
+
 </script>
 
 
