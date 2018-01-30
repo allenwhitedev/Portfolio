@@ -49,24 +49,7 @@
 <hr> 
 </div>
 
-
-<!-- NO MOBILE LVD SCREENSHOTS AT THIS TIME -->
-
-<!-- MOBILE HEADER DISPLAY (GIF GAME) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<div class="projectHeader textCenter">
-		
-		<div class="appIconHeader">
-
-
-		</div>
-
-		<div class="temp">
-		</div>
-		
-	</div>
-
-
-<!-- MOBILE WRAPPER -->
+<!-- MOBILE WRAPPER (GifGame) -->
 <div class="projectWrapper flexCenter">
 
 <section class="projectContainerLeft textCenter">
@@ -125,8 +108,52 @@
 <hr>
 <br><br>
 
+<!-- TABLET WRAPPER (Voyager Eclipse) -->
+<div class="projectWrapper flexCenter">
+	<section class="projectContainerLeft textCenter tabletCenter">
 
-<!-- WEBSITE HEADER (LVD) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<img class='appIconGG textCenter' src="img/voyagerEclipseIcon.png">
+		<h2 class='appIconTitle textCenter'>Voyager Eclipse</h2>	
+
+		<p>
+			An android application that combines the functionality of several enterprise applications.
+			<br /> Used by aviation technicians.
+		</p>	
+
+		<div class="badgesContainer">
+			<!-- GOOGLE PLAY BADGE -->
+			<p>		
+				<a class='appBadge googlePlayBadge' href="https://play.google.com/store/apps/details?id=com.voyagerEclipse.inceptumComponents&hl=en">
+				  <img class='googleImage' alt="Get it on Google Play" src="img/google-play-badge.png" />
+				</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="projectContainerRight flexCenter tabletHidden">
+		<div class="mobileDisplay tabletDisplay">	
+			
+			<div class="iPhoneTopper">
+			</div>
+			
+			<div class='mobileImgWrapper'>
+				<video muted id='voyagerEclipseVideoDemo' poster='img/gifGamePoster.png' width="500" src='video/voyagerEclipseReactDemo.mov' autoplay loop></video>
+			</div>
+
+			<div class="iPhoneBottomer flexCenter">
+				<div class="homeButton flexCenter">
+					<div class="homeSquare"></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</div>
+<hr>
+
+
+<!-- WEBSITE HEADER (Lakeview Dental) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div class="projectHeader textCenter">
 	<img class='appIconGG' src="img/favicon.ico">
 	<h2>LakeView Dental</h2>
@@ -137,9 +164,6 @@
         <a class='noTextDec' href='https://lakeviewdental.herokuapp.com'>lakeviewdental.herokuapp.com</a> (mobile-friendy version) 
   </p>
 </div>
-
-
-
 
 <!-- WEBSITE DISPLAY (LVD) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -203,7 +227,7 @@
 	}, 3000 )
 
 	// show video controls on hover for gif game demo
-	$('#ggVideoDemo').hover( function() 
+	$('#ggVideoDemo, #voyagerEclipseVideoDemo').hover( function() 
 	{
     if ( this.hasAttribute("controls") ) 
     	this.removeAttribute("controls")

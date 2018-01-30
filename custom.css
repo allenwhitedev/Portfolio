@@ -12,7 +12,7 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 .largeImg { height: 15rem; }
 
 /* PROJECTS */
-.projectWrapper { display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 60px; }
+.projectWrapper { display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 60px; padding-top: 10px;}
 .workHeader { margin-bottom: 10px; font-weight: 300; }
 
 /* PROFILE */
@@ -94,6 +94,10 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 .homeSquare 
 	{border-radius: 2px; height: 14px; width: 14px; border: 2px solid #9E9E9E;}
 
+/* tabletDisplay styles override mobileDisplay to make tablet display larger */
+.tabletDisplay, .tabletDisplay .iPhoneTopper, .tabletDisplay .iPhoneBottomer { width: 520px; }
+.tabletDisplay .mobileImg { border: 3px solid pink; }
+
 /* MEDIA QUERIES */
 
 /* mobile-only styles */
@@ -106,6 +110,12 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 	.temp, .mobileDisplayWrapper { display: none; }
 	.desktopDisplayWrapper { display: none; }
 	.contactSection { flex-direction: column; }
+}
+/* tablet&smaller-only styles */
+@media ( max-width: 1100px )
+{
+	.tabletHidden { display: none; }
+	.tabletCenter { margin: auto; }
 }
 
 /* desktop-only styles */
