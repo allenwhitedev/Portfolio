@@ -1,5 +1,5 @@
 /* APP WIDE */
-body {background: #eeecef; color: #424242;}
+body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 300;}
 .textCenter {text-align: center;}
 .iconSmall{font-size: 2rem;}
 .iconMed {font-size: 2.5rem; text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
@@ -10,6 +10,10 @@ body {background: #eeecef; color: #424242;}
 .yellowB {background: #FFEB3B;}
 .greenB {background: #388E3C;}
 .largeImg { height: 15rem; }
+
+/* PROJECTS */
+.projectWrapper { display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 60px; }
+.workHeader { margin-bottom: 10px; font-weight: 300; }
 
 /* PROFILE */
 .profilePic { height: 100px; border-radius: 50%; margin: 0 auto; }
@@ -63,9 +67,7 @@ body {background: #eeecef; color: #424242;}
 	height: 8rem; width: 8rem; border-radius: 8px; 
 }
 #nextGG:active, #prevGG:active {color: #de4f4f;}
-.mobileDisplayWrapper {width: 420px; margin: auto; margin-bottom: 240px;}
-.mobileDisplay 
-	{width: 340px; height: 568px;  margin: auto 15px;}
+.mobileDisplay {width: 340px; margin: auto 15px;}
 .mobileDisplay > * {background: #272822;}
 .iPhoneTopper 
 {
@@ -94,13 +96,23 @@ body {background: #eeecef; color: #424242;}
 
 /* MEDIA QUERIES */
 
-/* mobile */
+/* mobile-only styles */
 @media (max-width: 600px)
 {
+	.mobileHidden { display: none; border: 3px solid red;}
 	.nav-text { font-size: 1.5rem; }
 	p { font-size: 1rem; margin: 5px; }
 	.badgesContainer { flex-direction: column; justify-content: center; }
 	.temp, .mobileDisplayWrapper { display: none; }
 	.desktopDisplayWrapper { display: none; }
+	.contactSection { flex-direction: column; }
+}
 
+/* desktop-only styles */
+@media (min-width: 600px) 
+{
+	.contactSection > span { margin: 0px 5px; }
+	.projectContainerLeft { width: 48%; }
+	.projectContainerRight { width: 48%; }
+	.desktopHidden { display: none; }
 }

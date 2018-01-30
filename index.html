@@ -7,6 +7,7 @@
   <link rel='stylesheet' href='custom.css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/gifGameIcon.png" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 </head>
@@ -20,30 +21,32 @@
 <div class="headerBox textCenter">  	
 	
 	<p> 
-		I am a <strong>full-stack</strong> web developer that makes 
+		I am a <strong>fullstack</strong> web developer that makes 
 		<strong>websites + apps</strong> 
-		<br> with HTML, CSS, Javascript, and jQuery
+		<br> with HTML, CSS, and Javascript
   </p>
 
 
-  <p class='flexCenter'>
+  <p class='flexCenter contactSection'>
 	  <span class='flexCenter'> 
 	    <i class="ion-ios-email iconSmall"></i> &nbsp; 
 	    <a>allenwhitedev@gmail.com</a>
 	  </span>
-	  &nbsp; &nbsp;
+
 	  <span class='flexCenter'> 
 	  	<i class="ion-social-github iconSmall"></i> &nbsp; 
 	  	<a class='noTextDec' href='https://github.com/allenwhitedev'>github.com/allenwhitedev</a>
 	 	</span>
-	 	&nbsp; &nbsp;
+
 	 	<span class='flexCenter'> 
 	  	<i class="ion-document iconSmall"></i> &nbsp; 
 	  	<a class='noTextDec' href='./doc/resume.pdf'>resume.pdf</a>
 	 	</span>
   </p>
 
-<br> <hr> <br>
+  <h1 class="textCenter workHeader">My Work</h1>
+
+<hr> 
 </div>
 
 
@@ -53,26 +56,7 @@
 	<div class="projectHeader textCenter">
 		
 		<div class="appIconHeader">
-			<img class='appIconGG' src="img/gifGameIcon.png">
-				<h2 class='appIconTitle'>Gif Game</h2>	
-				
-				<div class="badgesContainer">
-						<!-- GOOGLE PLAY BADGE -->
-						<p>		
-							<a class='appBadge googlePlayBadge' href="https://play.google.com/store/apps/details?id=com.idoro9ye8ycteb1n7xfft">
-							  <img class='googleImage' alt="Get it on Google Play"
-							       src="img/google-play-badge.png" />
-							</a>
-						</p>
-				  
-					  <section>&nbsp; or &nbsp;</section>
-						
-						<!-- ITUNES BADGE -->
-						<a class='appBadge' href="https://itunes.apple.com/us/app/gif-game/id1040650791?mt=8">
-							<img class='appleImage' src="img/appStoreBadge.svg">
-						</a>
-					
-				</div>
+
 
 		</div>
 
@@ -80,11 +64,41 @@
 		</div>
 		
 	</div>
-	<br><br>
+
 
 <!-- MOBILE WRAPPER -->
-<div class="mobileDisplayWrapper flexCenter">
+<div class="projectWrapper flexCenter">
 
+<section class="projectContainerLeft textCenter">
+
+	<img class='appIconGG textCenter' src="img/gifGameIcon.png">
+	<h2 class='appIconTitle textCenter'>Gif Game</h2>	
+
+	<p> 
+		A friend's idea that became app for Andoid &amp; iOS because I wanted to work on a fullstack, realtime application. 
+		<br> Fun for you and up to four friends. 
+	</p>
+
+	<div class="badgesContainer">
+			<!-- GOOGLE PLAY BADGE -->
+			<p>		
+				<a class='appBadge googlePlayBadge' href="https://play.google.com/store/apps/details?id=com.idoro9ye8ycteb1n7xfft">
+				  <img class='googleImage' alt="Get it on Google Play"
+				       src="img/google-play-badge.png" />
+				</a>
+			</p>
+	  
+		  <section>&nbsp; or &nbsp;</section>
+			
+			<!-- ITUNES BADGE -->
+			<a class='appBadge' href="https://itunes.apple.com/us/app/gif-game/id1040650791?mt=8">
+				<img class='appleImage' src="img/appStoreBadge.svg">
+			</a>
+		
+	</div>
+</section>
+
+<section class='projectContainerRight flexCenter mobileHidden'>
 	<div class="mobileDisplay">	
 		
 		<div class="iPhoneTopper">
@@ -93,7 +107,7 @@
 		</div>
 		
 		<div class='mobileImgWrapper'>
-			<video id='ggVideoDemo' poster='img/gifGamePoster.png' width="320" src='video/gifGameDemo.mp4' autoplay loop></video>
+			<video muted id='ggVideoDemo' poster='img/gifGamePoster.png' width="320" src='video/gifGameDemo.mp4' autoplay loop></video>
 		</div>
 
 		<div class="iPhoneBottomer flexCenter">
@@ -103,6 +117,7 @@
 		</div>
 
 	</div>
+</section>
 
 </div>	
 
