@@ -3,7 +3,7 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 .textCenter {text-align: center;}
 .iconSmall{font-size: 2rem;}
 .iconMed {font-size: 2.5rem; text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
-.flexCenter 
+.flexCenter
 {display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
 .noTextDec {text-decoration: none;}
 .redB {background: #de4f4f;}
@@ -19,14 +19,14 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 .profilePic { height: 100px; border-radius: 50%; margin: 0 auto; }
 
 /* HEADERS */
-.nav-text 
+.nav-text
 {
 	font-family: 'Raleway'; font-size: 2.5rem;
 	text-align: center; margin: 0;
 }
-.headerBox 
+.headerBox
 {
-	font-family: 'Roboto'; font-weight: 300; font-size: 1.3rem; line-height: rem; 
+	font-family: 'Roboto'; font-weight: 300; font-size: 1.3rem; line-height: rem;
 }
 .projectHeader {font-family: 'Roboto'; font-weight: 300; font-size: 1.2rem;}
 
@@ -37,43 +37,42 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 
 /* DESKTOP DISPLAY */
 .browserWrapper {width: 90%; max-width: 1200px; margin: auto;}
-.browserTopper 
+.browserTopper
 {
 	background: #3c3b37; border-radius: 8px 8px 0px 0px;
 	height: 2rem; line-height: 2rem; padding-left: 5px;
-	display: flex; justify-content: left; align-items: center; 
+	display: flex; justify-content: left; align-items: center;
 }
-.browserTopper > li 
+.browserTopper > li
 {
-	list-style: none; height: .85rem; width: .85rem; 
+	list-style: none; height: .85rem; width: .85rem;
 	margin: auto 4px; border-radius: 50%; border: 1px solid #272822;
 }
-.deskImg, .mobileImg 
+.deskImg, .mobileImg
 {
 	width: 100%; border-radius: 0 0 3px 3px; /* level 5 box-shadow */
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-.desktopDisplayWrapper 
+.desktopDisplayWrapper
 {
 	display: flex; align-items: center; justify-content: flex-start;
-	max-width: 1300px; padding: 5px; margin: auto; 
+	max-width: 1300px; padding: 5px; margin: auto;
 }
 .navChevron:hover {cursor: pointer; cursor: hand;}
-#nextLVD:active, #prevLVD:active {color: #81D4FA;}
 
 /* MOBILE DISPLAY */
-.appIconGG 
+.appIconGG
 {
-	height: 8rem; width: 8rem; border-radius: 8px; 
+	height: 8rem; width: 8rem; border-radius: 8px;
 }
 #nextGG:active, #prevGG:active {color: #de4f4f;}
 .mobileDisplay {width: 340px; margin: auto 15px;}
 .mobileDisplay > * {background: #272822;}
-.iPhoneTopper 
+.iPhoneTopper
 {
-	height: 80px; width: 340px; background: #272822; 
+	height: 80px; width: 340px; background: #272822;
 	border-radius: 40px 40px 0px 0px;
-	display: flex; flex-direction: column; 
+	display: flex; flex-direction: column;
 	align-items: center; justify-content: center;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);
  }
@@ -81,17 +80,17 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
  .topperBar {width: 60px; height: 6px; border-radius: 6px;}
  .topperDot {width: 10px; height: 10px; border-radius: 50%;}
  .mobileImgWrapper {border: 10px solid #272822; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);}
- .mobileImg 
+ .mobileImg
  {box-shadow: none; border-radius: 0px; border-radius: 2px; max-height: 540px;}
-.iPhoneBottomer 
+.iPhoneBottomer
 {
-	width: 340px; height: 70px; padding-bottom: 10px; 
+	width: 340px; height: 70px; padding-bottom: 10px;
 	border-radius: 0px 0px 40px 40px; /* level 5 box-shadow */
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);
 }
-.homeButton 
+.homeButton
 	{width: 45px; height: 45px; border-radius: 50%; border: 2px solid #9E9E9E;}
-.homeSquare 
+.homeSquare
 	{border-radius: 2px; height: 14px; width: 14px; border: 2px solid #9E9E9E;}
 
 /* tabletDisplay styles override mobileDisplay to make tablet display larger */
@@ -119,7 +118,7 @@ body {background: #eeecef; color: #424242; font-family: 'Roboto'; font-weight: 3
 }
 
 /* desktop-only styles */
-@media (min-width: 600px) 
+@media (min-width: 600px)
 {
 	.contactSection > span { margin: 0px 5px; }
 	.projectContainerLeft { width: 48%; }
